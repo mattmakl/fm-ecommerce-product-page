@@ -11,18 +11,8 @@ let cartItems = [];
 let currentImg = 0;
 
 const toggleMobileNav = () => {
-    
     mobileNav.classList.toggle('active')
     mobileNav.setAttribute('aria-hidden',mobileNav.classList.contains('active')?false:true)
-
-
-    // if(mobileNav.classList.contains('active')){
-    //     mobileNav.classList.remove('active');
-    //     mobileNav.setAttribute('aria-hidden',true)
-    // } else {
-    //     mobileNav.classList.add('active');
-    //     mobileNav.setAttribute('aria-hidden',true)
-    // }
 }
 
 // update main image
