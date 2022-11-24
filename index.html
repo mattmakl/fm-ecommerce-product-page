@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+<header>
+  <button class="nav-mobile-hamburger">
+    <img src="images/icon-menu.svg" aria-label="open navigation"/>
+  </button>
+  <nav class="nav-mobile" aria-label="Mobile navigation" aria-hidden="true">
+    <ul>
+      <li>
+        <button class="nav-mobile-close">
+          <img src="images/icon-close.svg" aria-label="close navigation"/>
+        </button>
+      </li>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <img class="nav-logo" alt="sneakers logo" src="./images/logo.svg"/>
+  <nav class="nav-main" aria-label="Main navigation">
+    <ul>
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="user-info">
+    <div class="cart-summary hidden">
+      <p>Cart</p>
+      <hr>
+      <div class="cart-summary-body empty">Your cart is empty.</div>
+    </div>
+    <a class="icon cart-icon" href="#" target="_blank"><img class="cart-svg" src="./images/icon-cart.svg" alt="shopping cart logo"></a>
+    <a class="icon user-icon" href="#" target="_blank"><img src="./images/image-avatar.png" alt="user avatar image"></a>
+  </div>
+</header>
+<main>
+  <div class="container product-images-container">
+    <div class="photo-scroll-buttons">
+      <button id="prev-image" aria-label="view previous image"></button>
+      <button id="next-image" aria-label="view next image"></button>
+    </div>
+    <img class="product-image-selected" src="./images/image-product-1.jpg" alt="">
+    <div class="container thumbnail-container">
+      <div class="thumbnail selected"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+      <div class="thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+      <div class="thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+      <div class="thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="lightbox-bg hidden" aria-hidden="true">
+    <div class="lightbox-container">
+      <button id="close-lightbox" aria-label="close image lightbox"><img src="./images/icon-close.svg"/></button>
+      <div class="lightbox-scroll-buttons">
+        <button id="lightbox-prev" aria-label="view previous image"><img id="lightbox-prev-image"src="./images/icon-previous.svg"/></button>
+        <button id="lightbox-next" aria-label="view next image"><img id="lightbox-next-image"src="./images/icon-next.svg"/></button>
+      </div>
+      <img class="lightbox-product-image-selected" src="./images/image-product-1.jpg" alt="">
+      <div class="container lightbox-thumbnail-container">
+        <div class="lightbox-thumbnail selected"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+        <div class="lightbox-thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+        <div class="lightbox-thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+        <div class="lightbox-thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div class="container product-info-container">
+    <p class="product-brand">Sneaker Company</p>
+    <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+    <p class="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    <div class="container product-price-container">
+      <p class="current-price">$125.00</p>
+      <p class="price-discount">50%</p>
+      <p class="full-price">$250.00</p>
+    </div> 
+    <div class="container product-button-container">
+      <div class="container cart-quantity">
+        <img class="icon qty-minus" src="./images/icon-minus.svg">
+        <p class="cart-count">0</p> 
+        <img class="icon qty-plus" src="./images/icon-plus.svg">
+      </div>
+      <button id="add-to-cart">
+        <span>Add to cart</span>
+      </button>
+    </div>
+  </div>
+</main>
+  
+<script src="./script.js"></script>
+</body>
+</html>
